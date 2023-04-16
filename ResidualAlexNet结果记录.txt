@@ -1,0 +1,129 @@
+D:\programs\Anaconda\envs\pytorch\python.exe G:/笔记本数据保存/Y700数据互通/软件安装/chatgpt_academic-master/1.py
+ResidualAlexNet(
+  (conv1): Conv2d(1, 64, kernel_size=(11, 11), stride=(4, 4), padding=(2, 2))
+  (bn1): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (relu): ReLU(inplace=True)
+  (pool): MaxPool2d(kernel_size=3, stride=2, padding=0, dilation=1, ceil_mode=False)
+  (conv2): Conv2d(64, 192, kernel_size=(5, 5), stride=(1, 1), padding=(2, 2))
+  (bn2): BatchNorm2d(192, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (conv3): Conv2d(192, 384, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+  (bn3): BatchNorm2d(384, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (conv4): Conv2d(384, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+  (bn4): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (conv5): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+  (bn5): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (avgpool): AdaptiveAvgPool2d(output_size=(6, 6))
+  (classifier): Sequential(
+    (0): Dropout(p=0.5, inplace=False)
+    (1): Linear(in_features=9216, out_features=4096, bias=True)
+    (2): ReLU(inplace=True)
+    (3): Dropout(p=0.5, inplace=False)
+    (4): Linear(in_features=4096, out_features=4096, bias=True)
+    (5): ReLU(inplace=True)
+    (6): Linear(in_features=4096, out_features=10, bias=True)
+  )
+)
+(tensor([[-0.4047, -0.2218,  0.0691, -0.3412, -0.1826, -0.2291,  0.1037,  0.5567,
+          0.4487, -0.0710]], device='cuda:0', grad_fn=<AddmmBackward0>), tensor([[0.0652, 0.0783, 0.1047, 0.0695, 0.0814, 0.0777, 0.1084, 0.1706, 0.1531,
+         0.0910]], device='cuda:0', grad_fn=<SoftmaxBackward0>))
+Epoch: 001/010 | Batch: 000/938 | Cost: 2.4213
+Epoch: 001/010 | Batch: 120/938 | Cost: 1.6767
+Epoch: 001/010 | Batch: 240/938 | Cost: 1.4726
+Epoch: 001/010 | Batch: 360/938 | Cost: 1.2659
+Epoch: 001/010 | Batch: 480/938 | Cost: 1.0846
+Epoch: 001/010 | Batch: 600/938 | Cost: 0.9208
+Epoch: 001/010 | Batch: 720/938 | Cost: 0.7844
+Epoch: 001/010 | Batch: 840/938 | Cost: 0.8286
+Epoch: 001/010 | Train Acc.: 71.49% | Validation Acc.: 71.04%
+Time elapsed: 0.62 min
+Epoch: 002/010 | Batch: 000/938 | Cost: 0.5692
+Epoch: 002/010 | Batch: 120/938 | Cost: 0.8763
+Epoch: 002/010 | Batch: 240/938 | Cost: 0.6842
+Epoch: 002/010 | Batch: 360/938 | Cost: 0.7893
+Epoch: 002/010 | Batch: 480/938 | Cost: 0.2539
+Epoch: 002/010 | Batch: 600/938 | Cost: 0.1424
+Epoch: 002/010 | Batch: 720/938 | Cost: 0.0688
+Epoch: 002/010 | Batch: 840/938 | Cost: 0.1308
+Epoch: 002/010 | Train Acc.: 91.75% | Validation Acc.: 91.96%
+Time elapsed: 1.23 min
+Epoch: 003/010 | Batch: 000/938 | Cost: 0.4594
+Epoch: 003/010 | Batch: 120/938 | Cost: 0.2016
+Epoch: 003/010 | Batch: 240/938 | Cost: 0.0859
+Epoch: 003/010 | Batch: 360/938 | Cost: 0.3003
+Epoch: 003/010 | Batch: 480/938 | Cost: 0.0044
+Epoch: 003/010 | Batch: 600/938 | Cost: 0.0399
+Epoch: 003/010 | Batch: 720/938 | Cost: 0.1062
+Epoch: 003/010 | Batch: 840/938 | Cost: 0.3838
+Epoch: 003/010 | Train Acc.: 86.27% | Validation Acc.: 86.26%
+Time elapsed: 1.84 min
+Epoch: 004/010 | Batch: 000/938 | Cost: 0.1978
+Epoch: 004/010 | Batch: 120/938 | Cost: 0.1233
+Epoch: 004/010 | Batch: 240/938 | Cost: 1.5342
+Epoch: 004/010 | Batch: 360/938 | Cost: 0.0269
+Epoch: 004/010 | Batch: 480/938 | Cost: 0.1036
+Epoch: 004/010 | Batch: 600/938 | Cost: 0.1290
+Epoch: 004/010 | Batch: 720/938 | Cost: 0.0806
+Epoch: 004/010 | Batch: 840/938 | Cost: 0.0532
+Epoch: 004/010 | Train Acc.: 97.75% | Validation Acc.: 97.79%
+Time elapsed: 2.46 min
+Epoch: 005/010 | Batch: 000/938 | Cost: 0.0830
+Epoch: 005/010 | Batch: 120/938 | Cost: 0.4103
+Epoch: 005/010 | Batch: 240/938 | Cost: 0.0862
+Epoch: 005/010 | Batch: 360/938 | Cost: 0.0190
+Epoch: 005/010 | Batch: 480/938 | Cost: 0.1297
+Epoch: 005/010 | Batch: 600/938 | Cost: 0.0336
+Epoch: 005/010 | Batch: 720/938 | Cost: 0.0378
+Epoch: 005/010 | Batch: 840/938 | Cost: 0.0058
+Epoch: 005/010 | Train Acc.: 98.42% | Validation Acc.: 98.31%
+Time elapsed: 3.07 min
+Epoch: 006/010 | Batch: 000/938 | Cost: 0.0310
+Epoch: 006/010 | Batch: 120/938 | Cost: 0.0129
+Epoch: 006/010 | Batch: 240/938 | Cost: 0.1413
+Epoch: 006/010 | Batch: 360/938 | Cost: 0.0631
+Epoch: 006/010 | Batch: 480/938 | Cost: 0.1520
+Epoch: 006/010 | Batch: 600/938 | Cost: 0.0667
+Epoch: 006/010 | Batch: 720/938 | Cost: 0.0256
+Epoch: 006/010 | Batch: 840/938 | Cost: 0.0093
+Epoch: 006/010 | Train Acc.: 93.48% | Validation Acc.: 93.67%
+Time elapsed: 3.68 min
+Epoch: 007/010 | Batch: 000/938 | Cost: 0.2703
+Epoch: 007/010 | Batch: 120/938 | Cost: 0.6093
+Epoch: 007/010 | Batch: 240/938 | Cost: 0.0677
+Epoch: 007/010 | Batch: 360/938 | Cost: 0.0054
+Epoch: 007/010 | Batch: 480/938 | Cost: 0.0309
+Epoch: 007/010 | Batch: 600/938 | Cost: 0.1150
+Epoch: 007/010 | Batch: 720/938 | Cost: 0.0036
+Epoch: 007/010 | Batch: 840/938 | Cost: 0.1775
+Epoch: 007/010 | Train Acc.: 98.98% | Validation Acc.: 98.67%
+Time elapsed: 4.29 min
+Epoch: 008/010 | Batch: 000/938 | Cost: 0.0133
+Epoch: 008/010 | Batch: 120/938 | Cost: 0.0222
+Epoch: 008/010 | Batch: 240/938 | Cost: 0.0567
+Epoch: 008/010 | Batch: 360/938 | Cost: 0.0016
+Epoch: 008/010 | Batch: 480/938 | Cost: 0.2410
+Epoch: 008/010 | Batch: 600/938 | Cost: 0.0061
+Epoch: 008/010 | Batch: 720/938 | Cost: 0.1740
+Epoch: 008/010 | Batch: 840/938 | Cost: 0.3836
+Epoch: 008/010 | Train Acc.: 98.83% | Validation Acc.: 98.55%
+Time elapsed: 4.90 min
+Epoch: 009/010 | Batch: 000/938 | Cost: 0.0252
+Epoch: 009/010 | Batch: 120/938 | Cost: 0.0024
+Epoch: 009/010 | Batch: 240/938 | Cost: 0.0708
+Epoch: 009/010 | Batch: 360/938 | Cost: 0.0151
+Epoch: 009/010 | Batch: 480/938 | Cost: 0.0130
+Epoch: 009/010 | Batch: 600/938 | Cost: 0.1015
+Epoch: 009/010 | Batch: 720/938 | Cost: 0.0486
+Epoch: 009/010 | Batch: 840/938 | Cost: 0.0523
+Epoch: 009/010 | Train Acc.: 98.77% | Validation Acc.: 98.58%
+Time elapsed: 5.51 min
+Epoch: 010/010 | Batch: 000/938 | Cost: 0.0373
+Epoch: 010/010 | Batch: 120/938 | Cost: 0.0172
+Epoch: 010/010 | Batch: 240/938 | Cost: 0.0438
+Epoch: 010/010 | Batch: 360/938 | Cost: 0.0306
+Epoch: 010/010 | Batch: 480/938 | Cost: 0.1915
+Epoch: 010/010 | Batch: 600/938 | Cost: 0.1025
+Epoch: 010/010 | Batch: 720/938 | Cost: 0.0350
+Epoch: 010/010 | Batch: 840/938 | Cost: 0.0115
+Epoch: 010/010 | Train Acc.: 99.27% | Validation Acc.: 99.00%
+Time elapsed: 6.11 min
+Total Training Time: 6.11 min

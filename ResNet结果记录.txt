@@ -1,0 +1,186 @@
+D:\programs\Anaconda\envs\pytorch\python.exe G:/笔记本数据保存/Y700数据互通/软件安装/chatgpt_academic-master/1.py
+ResNet18MNIST(
+  (conv1): Conv2d(1, 64, kernel_size=(7, 7), stride=(2, 2), padding=(3, 3), bias=False)
+  (bn1): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (relu): ReLU(inplace=True)
+  (maxpool): MaxPool2d(kernel_size=3, stride=2, padding=1, dilation=1, ceil_mode=False)
+  (layer1): Sequential(
+    (0): BasicBlock(
+      (conv1): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn1): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (relu): ReLU(inplace=True)
+      (conv2): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    )
+    (1): BasicBlock(
+      (conv1): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn1): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (relu): ReLU(inplace=True)
+      (conv2): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    )
+  )
+  (layer2): Sequential(
+    (0): BasicBlock(
+      (conv1): Conv2d(64, 128, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), bias=False)
+      (bn1): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (relu): ReLU(inplace=True)
+      (conv2): Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (downsample): Sequential(
+        (0): Conv2d(64, 128, kernel_size=(1, 1), stride=(2, 2), bias=False)
+        (1): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      )
+    )
+    (1): BasicBlock(
+      (conv1): Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn1): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (relu): ReLU(inplace=True)
+      (conv2): Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    )
+  )
+  (layer3): Sequential(
+    (0): BasicBlock(
+      (conv1): Conv2d(128, 256, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), bias=False)
+      (bn1): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (relu): ReLU(inplace=True)
+      (conv2): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (downsample): Sequential(
+        (0): Conv2d(128, 256, kernel_size=(1, 1), stride=(2, 2), bias=False)
+        (1): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      )
+    )
+    (1): BasicBlock(
+      (conv1): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn1): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (relu): ReLU(inplace=True)
+      (conv2): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    )
+  )
+  (layer4): Sequential(
+    (0): BasicBlock(
+      (conv1): Conv2d(256, 512, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), bias=False)
+      (bn1): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (relu): ReLU(inplace=True)
+      (conv2): Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (downsample): Sequential(
+        (0): Conv2d(256, 512, kernel_size=(1, 1), stride=(2, 2), bias=False)
+        (1): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      )
+    )
+    (1): BasicBlock(
+      (conv1): Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn1): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (relu): ReLU(inplace=True)
+      (conv2): Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    )
+  )
+  (avgpool): AdaptiveAvgPool2d(output_size=(1, 1))
+  (fc): Linear(in_features=512, out_features=10, bias=True)
+)
+Epoch: 001/010 | Batch 000/938 | Cost: 2.4597
+Epoch: 001/010 | Batch 120/938 | Cost: 0.1128
+Epoch: 001/010 | Batch 240/938 | Cost: 0.1245
+Epoch: 001/010 | Batch 360/938 | Cost: 0.0537
+Epoch: 001/010 | Batch 480/938 | Cost: 0.0869
+Epoch: 001/010 | Batch 600/938 | Cost: 0.0225
+Epoch: 001/010 | Batch 720/938 | Cost: 0.0124
+Epoch: 001/010 | Batch 840/938 | Cost: 0.0129
+Epoch: 001/010 Train Acc.: 99.03% | Validation Acc.: 98.89%
+Time elapsed: 0.63 min
+Epoch: 002/010 | Batch 000/938 | Cost: 0.1047
+Epoch: 002/010 | Batch 120/938 | Cost: 0.0355
+Epoch: 002/010 | Batch 240/938 | Cost: 0.1651
+Epoch: 002/010 | Batch 360/938 | Cost: 0.0061
+Epoch: 002/010 | Batch 480/938 | Cost: 0.0155
+Epoch: 002/010 | Batch 600/938 | Cost: 0.0747
+Epoch: 002/010 | Batch 720/938 | Cost: 0.0440
+Epoch: 002/010 | Batch 840/938 | Cost: 0.0252
+Epoch: 002/010 Train Acc.: 99.22% | Validation Acc.: 99.09%
+Time elapsed: 1.21 min
+Epoch: 003/010 | Batch 000/938 | Cost: 0.0013
+Epoch: 003/010 | Batch 120/938 | Cost: 0.0021
+Epoch: 003/010 | Batch 240/938 | Cost: 0.0034
+Epoch: 003/010 | Batch 360/938 | Cost: 0.0064
+Epoch: 003/010 | Batch 480/938 | Cost: 0.0353
+Epoch: 003/010 | Batch 600/938 | Cost: 0.0059
+Epoch: 003/010 | Batch 720/938 | Cost: 0.0029
+Epoch: 003/010 | Batch 840/938 | Cost: 0.0890
+Epoch: 003/010 Train Acc.: 99.16% | Validation Acc.: 99.00%
+Time elapsed: 1.79 min
+Epoch: 004/010 | Batch 000/938 | Cost: 0.0156
+Epoch: 004/010 | Batch 120/938 | Cost: 0.0068
+Epoch: 004/010 | Batch 240/938 | Cost: 0.0055
+Epoch: 004/010 | Batch 360/938 | Cost: 0.1267
+Epoch: 004/010 | Batch 480/938 | Cost: 0.0137
+Epoch: 004/010 | Batch 600/938 | Cost: 0.0045
+Epoch: 004/010 | Batch 720/938 | Cost: 0.0407
+Epoch: 004/010 | Batch 840/938 | Cost: 0.0014
+Epoch: 004/010 Train Acc.: 99.24% | Validation Acc.: 99.09%
+Time elapsed: 2.37 min
+Epoch: 005/010 | Batch 000/938 | Cost: 0.0004
+Epoch: 005/010 | Batch 120/938 | Cost: 0.0177
+Epoch: 005/010 | Batch 240/938 | Cost: 0.0141
+Epoch: 005/010 | Batch 360/938 | Cost: 0.0158
+Epoch: 005/010 | Batch 480/938 | Cost: 0.0035
+Epoch: 005/010 | Batch 600/938 | Cost: 0.0006
+Epoch: 005/010 | Batch 720/938 | Cost: 0.0030
+Epoch: 005/010 | Batch 840/938 | Cost: 0.0244
+Epoch: 005/010 Train Acc.: 99.49% | Validation Acc.: 99.18%
+Time elapsed: 2.96 min
+Epoch: 006/010 | Batch 000/938 | Cost: 0.0113
+Epoch: 006/010 | Batch 120/938 | Cost: 0.0038
+Epoch: 006/010 | Batch 240/938 | Cost: 0.0004
+Epoch: 006/010 | Batch 360/938 | Cost: 0.0013
+Epoch: 006/010 | Batch 480/938 | Cost: 0.0180
+Epoch: 006/010 | Batch 600/938 | Cost: 0.0016
+Epoch: 006/010 | Batch 720/938 | Cost: 0.0534
+Epoch: 006/010 | Batch 840/938 | Cost: 0.0478
+Epoch: 006/010 Train Acc.: 99.43% | Validation Acc.: 99.20%
+Time elapsed: 3.55 min
+Epoch: 007/010 | Batch 000/938 | Cost: 0.0020
+Epoch: 007/010 | Batch 120/938 | Cost: 0.0339
+Epoch: 007/010 | Batch 240/938 | Cost: 0.0015
+Epoch: 007/010 | Batch 360/938 | Cost: 0.0019
+Epoch: 007/010 | Batch 480/938 | Cost: 0.0170
+Epoch: 007/010 | Batch 600/938 | Cost: 0.0022
+Epoch: 007/010 | Batch 720/938 | Cost: 0.0031
+Epoch: 007/010 | Batch 840/938 | Cost: 0.0008
+Epoch: 007/010 Train Acc.: 99.69% | Validation Acc.: 99.42%
+Time elapsed: 4.13 min
+Epoch: 008/010 | Batch 000/938 | Cost: 0.0002
+Epoch: 008/010 | Batch 120/938 | Cost: 0.0038
+Epoch: 008/010 | Batch 240/938 | Cost: 0.0002
+Epoch: 008/010 | Batch 360/938 | Cost: 0.0225
+Epoch: 008/010 | Batch 480/938 | Cost: 0.0314
+Epoch: 008/010 | Batch 600/938 | Cost: 0.0165
+Epoch: 008/010 | Batch 720/938 | Cost: 0.0651
+Epoch: 008/010 | Batch 840/938 | Cost: 0.0029
+Epoch: 008/010 Train Acc.: 99.67% | Validation Acc.: 99.32%
+Time elapsed: 4.71 min
+Epoch: 009/010 | Batch 000/938 | Cost: 0.0029
+Epoch: 009/010 | Batch 120/938 | Cost: 0.0075
+Epoch: 009/010 | Batch 240/938 | Cost: 0.0017
+Epoch: 009/010 | Batch 360/938 | Cost: 0.0012
+Epoch: 009/010 | Batch 480/938 | Cost: 0.0770
+Epoch: 009/010 | Batch 600/938 | Cost: 0.0013
+Epoch: 009/010 | Batch 720/938 | Cost: 0.0016
+Epoch: 009/010 | Batch 840/938 | Cost: 0.0490
+Epoch: 009/010 Train Acc.: 99.77% | Validation Acc.: 99.39%
+Time elapsed: 5.30 min
+Epoch: 010/010 | Batch 000/938 | Cost: 0.0025
+Epoch: 010/010 | Batch 120/938 | Cost: 0.0118
+Epoch: 010/010 | Batch 240/938 | Cost: 0.0327
+Epoch: 010/010 | Batch 360/938 | Cost: 0.0001
+Epoch: 010/010 | Batch 480/938 | Cost: 0.0733
+Epoch: 010/010 | Batch 600/938 | Cost: 0.0004
+Epoch: 010/010 | Batch 720/938 | Cost: 0.0024
+Epoch: 010/010 | Batch 840/938 | Cost: 0.0004
+Epoch: 010/010 Train Acc.: 99.79% | Validation Acc.: 99.36%
+Time elapsed: 5.89 min
+Total Training Time: 5.89 min

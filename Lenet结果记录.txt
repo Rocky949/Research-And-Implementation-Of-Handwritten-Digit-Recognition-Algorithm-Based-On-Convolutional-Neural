@@ -1,0 +1,113 @@
+D:\programs\Anaconda\envs\pytorch\python.exe G:/笔记本数据保存/Y700数据互通/软件安装/chatgpt_academic-master/1.py
+Downloading http://yann.lecun.com/exdb/mnist/train-images-idx3-ubyte.gz
+Downloading http://yann.lecun.com/exdb/mnist/train-images-idx3-ubyte.gz to data/MNIST\raw\train-images-idx3-ubyte.gz
+9913344it [00:04, 2147987.20it/s]                             
+Extracting data/MNIST\raw\train-images-idx3-ubyte.gz to data/MNIST\raw
+
+Downloading http://yann.lecun.com/exdb/mnist/train-labels-idx1-ubyte.gz
+Downloading http://yann.lecun.com/exdb/mnist/train-labels-idx1-ubyte.gz to data/MNIST\raw\train-labels-idx1-ubyte.gz
+29696it [00:00, 677395.42it/s]           
+Extracting data/MNIST\raw\train-labels-idx1-ubyte.gz to data/MNIST\raw
+
+Downloading http://yann.lecun.com/exdb/mnist/t10k-images-idx3-ubyte.gz
+Downloading http://yann.lecun.com/exdb/mnist/t10k-images-idx3-ubyte.gz to data/MNIST\raw\t10k-images-idx3-ubyte.gz
+1649664it [00:02, 774046.67it/s]                              
+Extracting data/MNIST\raw\t10k-images-idx3-ubyte.gz to data/MNIST\raw
+
+Downloading http://yann.lecun.com/exdb/mnist/t10k-labels-idx1-ubyte.gz
+Downloading http://yann.lecun.com/exdb/mnist/t10k-labels-idx1-ubyte.gz to data/MNIST\raw\t10k-labels-idx1-ubyte.gz
+Extracting data/MNIST\raw\t10k-labels-idx1-ubyte.gz to data/MNIST\raw
+
+5120it [00:00, 5193430.83it/s]          
+LetNet5(
+  (c1): Sequential(
+    (0): Conv2d(1, 6, kernel_size=(5, 5), stride=(1, 1), padding=(2, 2))
+    (1): BatchNorm2d(6, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (2): ReLU()
+    (3): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  )
+  (c2): Sequential(
+    (0): Conv2d(6, 16, kernel_size=(5, 5), stride=(1, 1))
+    (1): BatchNorm2d(16, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (2): ReLU()
+    (3): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  )
+  (c3): Sequential(
+    (0): Conv2d(16, 120, kernel_size=(5, 5), stride=(1, 1))
+    (1): BatchNorm2d(120, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (2): ReLU()
+  )
+  (fc1): Sequential(
+    (0): Linear(in_features=120, out_features=84, bias=True)
+    (1): ReLU()
+  )
+  (fc2): Sequential(
+    (0): Linear(in_features=84, out_features=10, bias=True)
+    (1): LogSoftmax(dim=None)
+  )
+)
+D:\programs\Anaconda\envs\pytorch\lib\site-packages\torch\nn\modules\container.py:141: UserWarning: Implicit dimension choice for log_softmax has been deprecated. Change the call to include dim=X as an argument.
+  input = module(input)
+Epoch [1/10], Step [100/600], Loss: 0.1975
+Epoch [1/10], Step [200/600], Loss: 0.1181
+Epoch [1/10], Step [300/600], Loss: 0.0323
+Epoch [1/10], Step [400/600], Loss: 0.0434
+Epoch [1/10], Step [500/600], Loss: 0.1207
+Epoch [1/10], Step [600/600], Loss: 0.0467
+Epoch [2/10], Step [100/600], Loss: 0.0083
+Epoch [2/10], Step [200/600], Loss: 0.0182
+Epoch [2/10], Step [300/600], Loss: 0.0946
+Epoch [2/10], Step [400/600], Loss: 0.0527
+Epoch [2/10], Step [500/600], Loss: 0.0611
+Epoch [2/10], Step [600/600], Loss: 0.0291
+Epoch [3/10], Step [100/600], Loss: 0.0902
+Epoch [3/10], Step [200/600], Loss: 0.0043
+Epoch [3/10], Step [300/600], Loss: 0.0300
+Epoch [3/10], Step [400/600], Loss: 0.0526
+Epoch [3/10], Step [500/600], Loss: 0.0147
+Epoch [3/10], Step [600/600], Loss: 0.0333
+Epoch [4/10], Step [100/600], Loss: 0.0188
+Epoch [4/10], Step [200/600], Loss: 0.0131
+Epoch [4/10], Step [300/600], Loss: 0.0035
+Epoch [4/10], Step [400/600], Loss: 0.0025
+Epoch [4/10], Step [500/600], Loss: 0.0037
+Epoch [4/10], Step [600/600], Loss: 0.0067
+Epoch [5/10], Step [100/600], Loss: 0.0066
+Epoch [5/10], Step [200/600], Loss: 0.0107
+Epoch [5/10], Step [300/600], Loss: 0.0201
+Epoch [5/10], Step [400/600], Loss: 0.0062
+Epoch [5/10], Step [500/600], Loss: 0.0108
+Epoch [5/10], Step [600/600], Loss: 0.0544
+Epoch [6/10], Step [100/600], Loss: 0.0283
+Epoch [6/10], Step [200/600], Loss: 0.0096
+Epoch [6/10], Step [300/600], Loss: 0.0053
+Epoch [6/10], Step [400/600], Loss: 0.0330
+Epoch [6/10], Step [500/600], Loss: 0.0029
+Epoch [6/10], Step [600/600], Loss: 0.0717
+Epoch [7/10], Step [100/600], Loss: 0.0082
+Epoch [7/10], Step [200/600], Loss: 0.0073
+Epoch [7/10], Step [300/600], Loss: 0.0072
+Epoch [7/10], Step [400/600], Loss: 0.0239
+Epoch [7/10], Step [500/600], Loss: 0.0146
+Epoch [7/10], Step [600/600], Loss: 0.0337
+Epoch [8/10], Step [100/600], Loss: 0.0362
+Epoch [8/10], Step [200/600], Loss: 0.0024
+Epoch [8/10], Step [300/600], Loss: 0.0290
+Epoch [8/10], Step [400/600], Loss: 0.0034
+Epoch [8/10], Step [500/600], Loss: 0.0041
+Epoch [8/10], Step [600/600], Loss: 0.0447
+Epoch [9/10], Step [100/600], Loss: 0.0418
+Epoch [9/10], Step [200/600], Loss: 0.0038
+Epoch [9/10], Step [300/600], Loss: 0.0069
+Epoch [9/10], Step [400/600], Loss: 0.0288
+Epoch [9/10], Step [500/600], Loss: 0.0262
+Epoch [9/10], Step [600/600], Loss: 0.0049
+Epoch [10/10], Step [100/600], Loss: 0.0029
+Epoch [10/10], Step [200/600], Loss: 0.0031
+Epoch [10/10], Step [300/600], Loss: 0.0142
+Epoch [10/10], Step [400/600], Loss: 0.0098
+Epoch [10/10], Step [500/600], Loss: 0.0002
+Epoch [10/10], Step [600/600], Loss: 0.0518
+Test Accuracy of the model on the 10000 test images: 98.93 %
+
+Process finished with exit code 0
